@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/shrimp/fo4/glock19x/Suppressor_GemtechTundra_D"
+	"$bumpmap" "models/shrimp/fo4/glock19x/Suppressor_GemtechTundra_N"
+	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Suppressor_GemtechTundra_S"
+	"$phong" "1"
+	"$phongboost" "200"
+	"$phongexponent" "15"		
+	"$normalmapalphaenvmapmask" 	"1"
+	"$phongfresnelranges"	"[0.4 0.8 1]"
+	"$phongalbedotint" 			"1"
+	"$rimmask" 1
+	"$rimlight"               1
+	"$rimlightexponent"       10
+	"$rimlightboost"          20	
+	"$envmap"	"models/shrimp/fo4/glock19x/fo4_cubemap"
+	"$envmaptint"			"[0.025 0.025 0.025]"
+}
+

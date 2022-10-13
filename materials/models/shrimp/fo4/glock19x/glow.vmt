@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"Proxies"
+	{
+		"PlayerWeaponColorStatic"
+		{
+			resultvar	$color2
+		}
+	}
+}

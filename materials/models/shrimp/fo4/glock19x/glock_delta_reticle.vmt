@@ -1,0 +1,32 @@
+"UnlitGeneric"
+
+{
+	"$basetexture"	"models/shrimp/fo4/glock19x/ReticleTriDot"
+	"$detail"		"models/weapons/tfa_ins2/optics/laser_noise"
+	"$detailblendmode" "2"
+	"$detailframe"	"0"
+	"$translucent" 	"1"
+	"$model"		"1"
+	"$additive"	"1"
+
+	$color2 "[1 0 0]"
+
+	Proxies
+	{
+		TextureScroll
+		{
+			textureScrollVar	$detailtexturetransform
+			textureScrollRate	50
+			textureScrollAngle 	180
+		}
+		TFAReticuleColor
+		{
+			resultVar $color2
+		}
+	}
+
+	UnlitGeneric_DX8
+	{
+		$detail	"models/weapons/tfa_ins2/detail_empty"
+	}
+}

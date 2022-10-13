@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/shrimp/fo4/glock19x/Magazine_D"
+	"$envmap"	"models/shrimp/fo4/glock19x/fo4_cubemap"
+	"$envmaptint"            "[0.51 0.30 0.09]"
+	"$basealphaenvmapmask"   1
+	"$phong"                 1
+	"$phongexponent"         30
+	"$basemapalphaphongmask" 1
+	"$phongtint"             "[0.8 0.47 0.13]"
+	"$color2"             "[0.76 0.76 0.76]"
+	"$phongfresnelranges"    "[0.05 0.5 1]"
+	"$phongboost"            5
+}

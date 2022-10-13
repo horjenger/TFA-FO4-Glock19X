@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/shrimp/fo4/glock19x/shared_lense"
+	"$bumpmap"	"models/weapons/tfa_ins2/optics/eotech_lense_nm"
+	"$model" 		"1"
+	"$translucent" 	"1"
+	"$phong"		"1"
+	"$envmap"	"models/shrimp/fo4/glock19x/fo4_cubemap"
+	"$envmapcontrast" 	"0.8"
+	"$envmapsaturation" "1"
+	
+	"Proxies"
+	{
+		"TFA_INS2_IronsightVectorResult"
+		{
+			"resultVar"		"$envmaptint"
+			"ResultDefault"	"0.69 0.19 0.86"
+			"ResultZoomed"	"0.05 0.05 0.05"
+		}
+	}
+}

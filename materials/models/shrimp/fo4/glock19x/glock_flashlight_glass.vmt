@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/shrimp/fo4/glock19x/Glass_D"
+	"$bumpmap" "models/shrimp/fo4/glock19x/Glass_N"
+	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Glass_S"
+	"$translucent" "1"
+	"$phong" "1"
+	"$phongboost" "10"
+	"$phongexponent" "40"		
+	"$normalmapalphaenvmapmask" 	"1"
+	"$phongfresnelranges"	"[0.3 0.8 1]"
+	"$rimmask" 1
+	"$rimlight"               1
+	"$rimlightexponent"       30
+	"$rimlightboost"          1	
+}
+
