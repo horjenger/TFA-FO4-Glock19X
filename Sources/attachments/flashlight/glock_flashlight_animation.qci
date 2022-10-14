@@ -1,0 +1,7 @@
+
+$sequence "idle" {
+	"glock_flashlight_anims\idle.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
