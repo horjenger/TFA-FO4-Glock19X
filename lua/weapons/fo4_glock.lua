@@ -222,7 +222,7 @@ SWEP.IronAnimation = {
 SWEP.SprintAnimation = {
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ,
-		["value"] = "ACT_VM_SPRINT_LOOP",
+		["value"] = "ACT_VM_SPRINT",
 		["is_idle"] = true
 	},
 }
@@ -377,14 +377,14 @@ SWEP.LaserSightModAttachmentWorld = 3
 DEFINE_BASECLASS( SWEP.Base )
 
 SWEP.EventTable = {
-	["base_ready"] = {
+	["equip"] = {
 		{time = 0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
 		{time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBackChecking")},
 		{time = 0.800000011920929, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideForwardChecking")},
 		{time = 0.9333333373069763, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckRotate")},
 		{time = 1.1666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")}
 	},
-	["base_ready_alt"] = {
+	["draw_alt"] = {
 		{time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.Holster")},
 		{time = 0.3333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothDrawSlideBack")},
 		{time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBack")},
@@ -392,18 +392,18 @@ SWEP.EventTable = {
 		{time = 1.0666667222976685, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
 		{time = 1.3000000715255737, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
 	},
-	["base_holster"] = {
+	["holster"] = {
 		{time = 0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
 		{time = 0.1333333373069763, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckRotate")},
 		{time = 0.3666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")}
 	},
-	["base_draw"] = {
+	["draw"] = {
 		{time = 0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.Holster")},
 		{time = 0.0666667222976685, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
 		{time = 0.1333333373069763, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckRotate")},
 		{time = 0.3000000715255737, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
 	},
-	["base_fidget"] = {
+	["inspect"] = {
 		{time = 0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckStart")},
 		{time = 0.699999988079071, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckRotate")},
 		{time = 1.5666667222976685, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckSlideBack")},
@@ -413,7 +413,7 @@ SWEP.EventTable = {
 		{time = 2.566666841506958, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideSmack")},
 		{time = 2.8333334922790527, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")}
 	},
-	["base_reload"] = {
+	["reload"] = {
 		{time = 0.03333333507180214, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
 		{time = 0.23333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},
 		{time = 0.3333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
@@ -424,7 +424,7 @@ SWEP.EventTable = {
 		{time = 2.1000001430511475, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
 		{time = 2.3, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
 	},
-	["base_reload_24"] = {		
+	["reload_24"] = {		
         {time = 0.03333333507180214, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
         {time = 0.30000001192092896, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
         {time = 0.23333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},
@@ -435,7 +435,7 @@ SWEP.EventTable = {
         {time = 1.8333333730697632, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
 		{time = 1.9266666984558105, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")},
     },
-    ["base_reload_33"] = {
+    ["reload_33"] = {
         {time = 0.03333333507180214, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
         {time = 0.23333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},
         {time = 0.30000001192092896, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
@@ -446,7 +446,7 @@ SWEP.EventTable = {
         {time = 1.8333333730697632, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
         {time = 1.9266666984558105, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")}
     },
-	["base_reload_50"] = {	
+	["reload_50"] = {	
         {time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
         {time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
         {time = 0.1666666716337204, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},    

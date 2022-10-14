@@ -1,0 +1,156 @@
+$sequence "idle" {
+	"fo4_glock19x_anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	loop
+	fps 30
+}
+
+$sequence "idle_iron" {
+	"fo4_glock19x_anims\idle_iron.smd"
+	activity "ACT_VM_IDLE_ADS" 1
+	fadein 0.2
+	fadeout 0.2
+	loop
+	fps 30
+}
+
+$sequence "inspect" {
+	"fo4_glock19x_anims\inspect.smd"
+	activity "ACT_VM_FIDGET" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "huh" {
+	"fo4_glock19x_anims\huh.smd"
+	activity "ACT_VM_FIDGET" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "melee" {
+	"fo4_glock19x_anims\melee.smd"
+	activity "ACT_VM_HITCENTER" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "equip" {
+	"fo4_glock19x_anims\equip.smd"
+	activity "ACT_VM_DRAW_DEPLOYED" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "draw" {
+	"fo4_glock19x_anims\draw.smd"
+	activity "ACT_VM_DRAW" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "draw_alt" {
+	"fo4_glock19x_anims\draw_alt.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "holster" {
+	"fo4_glock19x_anims\holster.smd"
+	activity "ACT_VM_HOLSTER" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "sprint" {
+	"fo4_glock19x_anims\sprint.smd"
+	activity "ACT_VM_SPRINT" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "walk" {
+	"fo4_glock19x_anims\walk.smd"
+	activity "ACT_VM_WALK" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload" {
+	"fo4_glock19x_anims\reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_24" {
+	"fo4_glock19x_anims\reload_24.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_33" {
+	"fo4_glock19x_anims\reload_33.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_50" {
+	"fo4_glock19x_anims\reload_50.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "fire_1" {
+	"fo4_glock19x_anims\fire_1.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "fire_2" {
+	"fo4_glock19x_anims\fire_2.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "fire_3" {
+	"fo4_glock19x_anims\fire_3.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "fire_iron" {
+	"fo4_glock19x_anims\fire_iron.smd"
+	activity "ACT_VM_PRIMARYATTACK_1" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+
+

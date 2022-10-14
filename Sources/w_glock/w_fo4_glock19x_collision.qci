@@ -1,0 +1,10 @@
+
+$collisionmodel "w_fo4_glock19x_physics.smd"
+{
+	$mass 65
+	$inertia 1
+	$damping 0.5
+	$rotdamping 1.5
+	$rootbone "CovertSidearmReceiver"
+
+}

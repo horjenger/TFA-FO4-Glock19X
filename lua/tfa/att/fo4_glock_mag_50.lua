@@ -25,7 +25,7 @@ ATTACHMENT.WeaponTable = {
 				val.value = val.value .. "_50"
 			else
 				val.type = TFA.Enum.ANIMATION_SEQ --Sequence or act
-				val.value = "base_reload_50"
+				val.value = "reload_50"
 			end
 			return (wep:CheckVMSequence(val.value) and val or _val), true, true
 		end,

@@ -18,7 +18,7 @@ ATTACHMENT.WeaponTable = {
 				val.value = val.value .. "_alt"
 			else
 				val.type = TFA.Enum.ANIMATION_SEQ --Sequence or act
-				val.value = "base_ready_alt"
+				val.value = "draw_alt"
 			end
 			return (wep:CheckVMSequence(val.value) and val or _val), true, true
 		end,
