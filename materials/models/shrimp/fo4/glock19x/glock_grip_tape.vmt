@@ -7,7 +7,7 @@
 	"$phongboost" "1"
 	"$phongexponent" "5"		
 	"$normalmapalphaenvmapmask" 	"1"
-	"$phongfresnelranges"	"[0.25 0.8 1]"
+	"$phongfresnelranges"	"[0.1 0.5 1]"
 	"$rimmask" 1
 	"$rimlight"               1
 	"$rimlightexponent"       10

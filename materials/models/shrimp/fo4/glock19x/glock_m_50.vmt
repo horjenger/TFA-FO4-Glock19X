@@ -14,7 +14,7 @@
 	"$rimlightexponent"       25
 	"$rimlightboost"          20	
 	"$envmap"	"models/shrimp/fo4/glock19x/fo4_cubemap"
-	"$envmaptint"			"[0.026 0.026 0.026]"
+	"$envmaptint"			"[0.015 0.015 0.015]"
 }
 
 
