@@ -37,7 +37,7 @@ ATTACHMENT.WeaponTable = {
 	},
 	["Secondary"] = {
 		["BashDamage"] = function(wep, val) return val * 1.5 end,
-		["BashLength"] = function(wep, val) return val * 1.3 end,
+		["BashLength"] = function(wep, val) return val * 1.2 end,
 	},
 }
 
