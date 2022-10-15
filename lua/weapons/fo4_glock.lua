@@ -304,7 +304,6 @@ SWEP.Attachments = {
 	[6] = { atts = { "fo4_glock_laser", "fo4_glock_flashlight"} },
 	[7] = { atts = { "fo4_glock_grip_ext", "fo4_glock_grip_tape" } },
 	[8] = { atts = { "fo4_glock_agency_slide" } },
-	[9] = { atts = { "fo4_glock_alt_draw" } },
 }
 
 SWEP.ViewModelBoneMods = {}
@@ -384,7 +383,7 @@ SWEP.EventTable = {
 		{time = 0.9333333373069763, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckRotate")},
 		{time = 1.1666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")}
 	},
-	["draw_alt"] = {
+	["equip_alt"] = {
 		{time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.Holster")},
 		{time = 0.3333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothDrawSlideBack")},
 		{time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBack")},
@@ -423,6 +422,17 @@ SWEP.EventTable = {
 		{time = 1.6666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
 		{time = 2.1000001430511475, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
 		{time = 2.3, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
+	},
+	["reload_alt"] = {
+		{time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},
+		{time = 0.30000001192092896, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
+		{time = 0.4333333373069763, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},
+		{time = 0.800000011920929, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIns1")},
+		{time = 1.0666667222976685, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIn")},
+		{time = 1.3000000715255737, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
+		{time = 1.6333333253860474, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBackChecking")},
+		{time = 1.7333333492279053, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
+		{time = 2.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
 	},
 	["reload_24"] = {		
         {time = 0.03333333507180214, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothStart")},

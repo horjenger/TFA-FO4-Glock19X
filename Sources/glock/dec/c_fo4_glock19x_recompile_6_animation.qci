@@ -43,6 +43,14 @@ $sequence "equip" {
 	fps 30
 }
 
+$sequence "equip_alt" {
+	"c_fo4_glock19x_recompile_6_anims\equip_alt.smd"
+	activity "ACT_VM_DRAW_DEPLOYED" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "draw" {
 	"c_fo4_glock19x_recompile_6_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
@@ -84,6 +92,14 @@ $sequence "walk" {
 
 $sequence "reload" {
 	"c_fo4_glock19x_recompile_6_anims\reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_alt" {
+	"c_fo4_glock19x_recompile_6_anims\reload_alt.smd"
 	activity "ACT_VM_RELOAD" 1
 	fadein 0.2
 	fadeout 0.2

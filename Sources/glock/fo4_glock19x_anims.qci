@@ -24,14 +24,6 @@ $sequence "inspect" {
 	fps 30
 }
 
-$sequence "huh" {
-	"fo4_glock19x_anims\huh.smd"
-	activity "ACT_VM_FIDGET" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
 $sequence "melee" {
 	"fo4_glock19x_anims\melee.smd"
 	activity "ACT_VM_HITCENTER" 1
@@ -42,6 +34,14 @@ $sequence "melee" {
 
 $sequence "equip" {
 	"fo4_glock19x_anims\equip.smd"
+	activity "ACT_VM_DRAW_DEPLOYED" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "equip_alt" {
+	"fo4_glock19x_anims\draw_alt.smd"
 	activity "ACT_VM_DRAW_DEPLOYED" 1
 	fadein 0.2
 	fadeout 0.2
@@ -89,6 +89,14 @@ $sequence "walk" {
 
 $sequence "reload" {
 	"fo4_glock19x_anims\reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_alt" {
+	"fo4_glock19x_anims\reload_alt.smd"
 	activity "ACT_VM_RELOAD" 1
 	fadein 0.2
 	fadeout 0.2
