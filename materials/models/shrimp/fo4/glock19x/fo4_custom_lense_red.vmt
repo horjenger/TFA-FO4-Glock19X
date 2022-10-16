@@ -5,7 +5,7 @@
 	"$model" 		"1"
 	"$translucent" 	"1"
 	"$phong"		"1"
-	"$envmap"	"models/shrimp/fo4/glock19x/fo4_cubemap"
+	"$envmap"	"env_cubemap"
 	"$envmapcontrast" 	"0.8"
 	"$envmapsaturation" "1"
 	
