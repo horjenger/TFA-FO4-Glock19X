@@ -1,14 +1,20 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/shrimp/fo4/glock19x/Magazine_D"
+	"$bumpmap" "models/shrimp/fo4/glock19x/Magazine_N"
+	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Magazine_S"
+	"$phong" "1"
+	"$phongboost" "5"	
+	"$phongexponent" "15"	
+	"$phongalbedotint"			"1"
+	"$normalmapalphaenvmapmask" 	"1"
+	"$phongfresnelranges"	"[1 1 1]"
+	"$color2"	"[0.7 0.7 0.7]"
+	"$phongtint" "[0.40 0.24 0.06]"
+	"$rimmask" 1
+	"$rimlight"               1
+	"$rimlightexponent"       25
 	"$envmap"	"env_cubemap"
-	"$envmaptint"            "[0.51 0.30 0.09]"
-	"$basealphaenvmapmask"   1
-	"$phong"                 1
-	"$phongexponent"         30
-	"$basemapalphaphongmask" 1
-	"$phongtint"             "[0.8 0.47 0.13]"
-	"$color2"             "[0.76 0.76 0.76]"
-	"$phongfresnelranges"    "[0.05 0.5 1]"
-	"$phongboost"            5
+	"$envmaptint"			"[0.041 0.024 0.003]"
 }
+

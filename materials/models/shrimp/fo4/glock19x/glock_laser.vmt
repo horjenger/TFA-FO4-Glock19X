@@ -4,10 +4,11 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/LaserSight_ViridianC5L_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/LaserSight_ViridianC5L_S"
 	"$phong" "1"
-	"$phongboost" "2"
+	"$phongboost" "180"
 	"$phongexponent" "15"		
 	"$normalmapalphaenvmapmask" 	"1"
 	"$phongfresnelranges"	"[0.3 0.8 1]"
+	"$phongalbedotint" 			"1"
 	"$rimmask" 1
 	"$rimlight"               1
 	"$rimlightexponent"       30
