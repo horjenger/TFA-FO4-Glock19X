@@ -10,3 +10,6 @@ Glock19X from Fallout 4 mod on TFA Base
 * ***Addon has uncompressed textures***
 * ***Addon can kill your FPS*** (on potato PC)
 * ***There may be extra files I forgot to delete***
+
+## IMPORTANT FOR UPDATES
+![alt text](https://i.imgur.com/wBAscZ9.png) 
