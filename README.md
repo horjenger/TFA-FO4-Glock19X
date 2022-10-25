@@ -3,7 +3,7 @@ Glock19X from Fallout 4 mod on TFA Base
 
 ## Requestments:
 * TFA Base
-* TFA FO4 Base
+* TFA FO4 Base (mounted)
 * TFA Insurgency: Shared Parts
 
 ## Notes:
