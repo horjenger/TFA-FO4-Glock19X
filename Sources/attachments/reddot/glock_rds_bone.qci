@@ -1,3 +1,0 @@
-$definebone "WeaponBolt" "" 0 0 0 0 0 0 0 0 0 0 0 0
-$definebone "Lense" "WeaponBolt" 0.0037482 1.1636688 3.4672416  0.000000 -0.000000 0.000000 0 0 0 0 0 0
-$definebone "A_RenderReticle" "WeaponBolt" 0.0037488 2.9071686 3.4672416  0.000000 -0.000000 0.000000 0 0 0 0 0 0

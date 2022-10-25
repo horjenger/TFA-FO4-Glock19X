@@ -1,7 +1,0 @@
-
-$sequence "idle" {
-	"w_fo4_glock19x_anims\idle.smd"
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
