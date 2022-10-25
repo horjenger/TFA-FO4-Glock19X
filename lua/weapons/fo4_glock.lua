@@ -81,7 +81,7 @@ SWEP.IronRecoilMultiplier = 0.6 --Multiply recoil by this factor when we're in i
 SWEP.CrouchAccuracyMultiplier = 0.85 --Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
 --Movespeed
 SWEP.MoveSpeed = 1 --Multiply the player's movespeed by this.
-SWEP.IronSightsMoveSpeed = 0.97 --Multiply the player's movespeed by this when sighting.
+SWEP.IronSightsMoveSpeed = 0.98 --Multiply the player's movespeed by this when sighting.
 --[[PROJECTILES]]--
 SWEP.ProjectileEntity = nil --Entity to shoot
 SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
