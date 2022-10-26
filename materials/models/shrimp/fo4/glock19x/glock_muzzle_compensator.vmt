@@ -4,10 +4,10 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/Muzzle_Compensator_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Muzzle_Compensator_S"
 	"$phong" "1"
-	"$phongboost" "130"
-	"$phongexponent" "20"		
+	"$phongboost" "120"
+	"$phongexponent" "15"		
 	"$normalmapalphaenvmapmask" 	"1"
-	"$phongfresnelranges"	"[0.4 0.8 1]"
+	"$phongfresnelranges"	"[0.5 0.65 1]"
 	"$phongalbedotint" 			"1"
 	"$rimmask" 1
 	"$rimlight"               1
