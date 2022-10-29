@@ -200,6 +200,8 @@ SWEP.Customize_Mode = TFA.Enum.LOCOMOTION_HYBRID
 SWEP.Idle_Mode = TFA.Enum.IDLE_BOTH
 
 
+
+
 SWEP.StatusLengthOverride = {
 	["base_reload"] = 2.3,
 	["base_reload_24"] = 1.9266666984558105,
@@ -209,10 +211,20 @@ SWEP.StatusLengthOverride = {
 
 --MDL Animations Below
 SWEP.IronAnimation = {
+	["in"] = {
+		["type"] = TFA.Enum.ANIMATION_SEQ,
+		["value"] = "ACT_VM_IN_ADS",
+		["transition"] = true
+	},
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ,
 		["value"] = "ACT_VM_IDLE_ADS",
 		["is_idle"] = true
+	},
+	["out"] = {
+		["type"] = TFA.Enum.ANIMATION_SEQ,
+		["value"] = "ACT_VM_OUT_ADS",
+		["transition"] = true
 	},
 	["shoot"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ,
@@ -237,6 +249,14 @@ SWEP.WalkAnimation = {
 	["loop"] = {
 	["type"] = TFA.Enum.ANIMATION_SEQ,
 	["value"] = "ACT_VM_WALK",
+	},
+}
+SWEP.ShootAnimation = {
+	["loop"] = {
+		["type"] = TFA.Enum.ANIMATION_SEQ,
+		["value"] = "ACT_VM_PRIMARYATTACK_AUTO",
+		["value_is"] = "ACT_VM_PRIMARYATTACK_1_AUTO",
+		["is_idle"] = true,
 	},
 }
 
