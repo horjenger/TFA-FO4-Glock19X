@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models\weapons\tfa_grovez\alpha_50"
+	"$basetexture"				"models\shrimp\fo4\glock19x\alpha_50"
 	"$bumpmap"					"dev\bump_normal"
 	"$translucent"				"1"
 
