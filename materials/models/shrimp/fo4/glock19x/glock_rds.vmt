@@ -4,7 +4,7 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/Sight_MicroRedDot_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Sight_MicroRedDot_S"
 	"$phong" "1"
-	"$phongboost" "170"
+	"$phongboost" "200"
 	"$phongexponent" "15"		
 	"$normalmapalphaenvmapmask" 	"1"
 	"$phongfresnelranges"	"[0.5 0.7 1]"
