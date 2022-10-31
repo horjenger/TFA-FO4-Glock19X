@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture"				"models\weapons\tfa_grovez\alpha_50"
+	"$bumpmap"					"dev\bump_normal"
+	"$translucent"				"1"
+
+	"$envmap"					"env_cubemap"
+	"$envmapfresnel"			"1"
+	"$envmaptint"				"[1 0.5 0.1]"
+
+	"$phong"					"1"
+	"$phongexponent"			"50"
+	"$phongboost"				"10"
+	"$phongfresnelranges"		"[0.25 0.75 1.00]"
+	"$phongtint"				"[1 1 0]"
+}

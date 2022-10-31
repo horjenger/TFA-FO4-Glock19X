@@ -1,0 +1,26 @@
+"VertexlitGeneric"
+{
+	"$basetexture"				"models\weapons\tfa_grovez\alpha_50"
+	"$bumpmap"					"dev\bump_normal"
+	"$translucent"				"1"
+
+	"$envmap"					"env_cubemap"
+	"$envmapfresnel"			"0.25"
+	"$envmaptint"				"[0.2 0.4 0.6]"
+
+	"$phong"					"1"
+	"$phongexponent"			"300"
+	"$phongboost"				"0.75"
+	"$phongfresnelranges"		"[0.25 0.75 1.00]"
+	"$phongtint"				"[0.15 0.4 1.0]"
+
+	"Proxies"
+	{
+		"TFA_INS2_IronsightVectorResult"
+		{
+			"resultVar"			"$envmapfresnel"
+			"ResultDefault"		"0.25"
+			"ResultZoomed"		"2.5"
+		}
+	}
+}
