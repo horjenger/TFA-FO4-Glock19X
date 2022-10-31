@@ -65,15 +65,15 @@ SWEP.Primary.KickDown = 0.25 -- This is the maximum downwards recoil (skeet)
 SWEP.Primary.KickHorizontal = 0.15 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor = 0.3 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
-SWEP.Primary.Spread = .023 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .016 -- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread = .015 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .005 -- Ironsight accuracy, should be the same for shotguns
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
-SWEP.Primary.SpreadMultiplierMax = 4--How far the spread can expand when you shoot. Example val: 2.5
+SWEP.Primary.SpreadMultiplierMax = 2.5 --How far the spread can expand when you shoot. Example val: 2.5
 SWEP.Primary.SpreadIncrement = 1 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
 SWEP.Primary.SpreadRecovery = 4 --How much the spread recovers, per second. Example val: 3
 --Range Related
 SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
-SWEP.Primary.RangeFalloff = .5 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
+SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
 --Penetration Related
 SWEP.MaxPenetrationCounter = 2 --The maximum number of ricochets.  To prevent stack overflows.
 --Misc
@@ -383,7 +383,7 @@ SWEP.VElements = {
 	},
 	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.6, 0.6), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
 }
 
 SWEP.WElements = {

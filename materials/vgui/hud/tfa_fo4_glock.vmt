@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/hud/tfa_fo4_glock"
+	$translucent "1"
+	$nocull "1"
+	$ignorez "1"
+	$vertexcolor "1"
+	$vertexalpha "1"
+}
