@@ -203,10 +203,9 @@ SWEP.Idle_Mode = TFA.Enum.IDLE_BOTH
 
 
 SWEP.StatusLengthOverride = {
-	["base_reload"] = 2.3,
-	["base_reload_24"] = 1.9266666984558105,
-	["base_reload_33"] = 1.9266666984558105,
-	["base_reload_50"] = 3.34
+	["reload_24"] = 2.4566666984558105,
+	["reload_33"] = 2.4566666984558105,
+	["reload_50"] = 3.7
 }
 
 --MDL Animations Below
