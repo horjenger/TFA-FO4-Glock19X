@@ -2,7 +2,7 @@ if not ATTACHMENT then
 	ATTACHMENT = {}
 end
 
-ATTACHMENT.Name = "Flashlight"
+ATTACHMENT.Name = "APLc Flashlight"
 ATTACHMENT.Description = {
 	TFA.AttachmentColors["+"], "Assists target discovery in darker settings"
 }

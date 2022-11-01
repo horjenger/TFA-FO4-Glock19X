@@ -164,8 +164,8 @@ SWEP.Secondary.IronFOV = 88 -- How much you 'zoom' in. Less is more!  Don't have
 SWEP.IronSightsPos = Vector(0.13, 1, -0.02)
 SWEP.IronSightsAng = Vector(0, 0.55, 0)
 --[[INSPECTION]]--
-SWEP.InspectPos = Vector(14.406, -7, 2.358)
-SWEP.InspectAng = Vector(36.34, 56.686, 39.937)
+SWEP.InspectPos = Vector(-1, 2, 1)
+SWEP.InspectAng = Vector(0, 0, 0)
 --[[VIEWMODEL ANIMATION HANDLING]]--
 SWEP.AllowViewAttachment = true --Allow the view to sway based on weapon attachment while reloading or drawing, IF THE CLIENT HAS IT ENABLED IN THEIR CONVARS.
 --[[VIEWMODEL BLOWBACK]]--
@@ -197,15 +197,17 @@ SWEP.Sights_Mode = TFA.Enum.LOCOMOTION_HYBRID
 SWEP.Sprint_Mode = TFA.Enum.IDLE_ANI
 SWEP.Walk_Mode = TFA.Enum.IDLE_ANI
 SWEP.Customize_Mode = TFA.Enum.LOCOMOTION_HYBRID
-SWEP.Idle_Mode = TFA.Enum.IDLE_BOTH
-
-
-
+SWEP.Idle_Mode = TFA.Enum.IDLE_ANI
 
 SWEP.StatusLengthOverride = {
 	["reload_24"] = 2.4566666984558105,
 	["reload_33"] = 2.4566666984558105,
 	["reload_50"] = 3.7
+}
+
+SWEP.SequenceRateOverride = {
+	["cust_in"] = 0.8,
+	["cust_out"] = 0.8,
 }
 
 --MDL Animations Below
@@ -257,6 +259,24 @@ SWEP.ShootAnimation = {
 		["value_is"] = "ACT_VM_PRIMARYATTACK_1_AUTO",
 		["is_idle"] = true,
 	},
+}
+
+SWEP.CustomizeAnimation = {
+	["in"] = {
+		["type"] = TFA.Enum.ANIMATION_SEQ,
+		["value"] = "ACT_VM_CUST_IN",
+		["transition"] = true
+	},
+	["loop"] = {
+		["type"] = TFA.Enum.ANIMATION_SEQ,
+		["value"] = "ACT_VM_CUST_LOOP",
+		["is_idle"] = true
+	},
+	["out"] = {
+		["type"] = TFA.Enum.ANIMATION_SEQ,
+		["value"] = "ACT_VM_CUST_OUT",
+		["transition"] = true
+	}
 }
 
 --[[EFFECTS]]--
@@ -320,7 +340,7 @@ SWEP.Attachments = {
 	[3] = { atts = { "fo4_glock_rds", "fo4_glock_delta", "fo4_glock_trit_sight" } },
 	[4] = { atts = { "fo4_glock_mag_22", "fo4_glock_mag_33", "fo4_glock_mag_50" } },
 	[5] = { atts = { "fo4_glock_muzzle", "fo4_glock_supp_osprey", "fo4_glock_supp_gemtech" } },
-	[6] = { atts = { "fo4_glock_laser", "fo4_glock_flashlight"} },
+	[6] = { atts = { "fo4_glock_laser", "fo4_glock_flashlight", "fo4_glock_flashlight_tlr7"} },
 	[7] = { atts = { "fo4_glock_grip_ext", "fo4_glock_grip_tape" } },
 	[8] = { atts = { "fo4_glock_agency_slide" } },
 }
@@ -381,6 +401,7 @@ SWEP.VElements = {
 		active = false
 	},
 	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
 }
