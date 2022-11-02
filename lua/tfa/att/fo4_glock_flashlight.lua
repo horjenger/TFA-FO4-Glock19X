@@ -27,6 +27,8 @@ ATTACHMENT.WeaponTable = {
 }
 
 function ATTACHMENT:Attach(wep)
+	wep.FlashlightDotMaterial = nil
+	wep.FlashlightDotMaterial = Material("models/shrimp/fo4/glock19x/fo4_flashlight_dot")
 	local owner = wep:GetOwner()
 
 	if SERVER and IsValid(owner) and owner:IsPlayer() and owner:FlashlightIsOn() then
@@ -35,6 +37,8 @@ function ATTACHMENT:Attach(wep)
 end
 
 function ATTACHMENT:Detach(wep)
+	wep.FlashlightDotMaterial = nil
+	wep.FlashlightDotMaterial = Material("effects/flashlight001")
 	if wep:GetFlashlightEnabled() then
 		wep:ToggleFlashlight(false)
 	end
