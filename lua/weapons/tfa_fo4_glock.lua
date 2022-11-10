@@ -291,6 +291,7 @@ SWEP.SmokeParticle = nil --Smoke particle (ID within the PCF), defaults to somet
 --Shell eject override
 SWEP.LuaShellEject = true --Enable shell ejection through lua?
 SWEP.LuaShellEjectDelay = 0 --The delay to actually eject things
+SWEP.LuaShellModel = "models/weapons/glock19x_shell.mdl" -- The model to use for ejected shells
 SWEP.LuaShellEffect = "PistolShellEject" --The effect used for shell ejection; Defaults to that used for blowback
 --Tracer Stuff
 SWEP.TracerName 		= nil 	--Change to a string of your tracer name.  Can be custom. There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
