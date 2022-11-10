@@ -451,7 +451,6 @@ SWEP.WElements = {
 	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 }
 SWEP.MuzzleAttachmentSilenced = 2
 SWEP.LaserSightModAttachment = 1
