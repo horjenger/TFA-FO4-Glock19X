@@ -13,7 +13,7 @@ ATTACHMENT.WeaponTable = {
         [7] = 1
     },
         ["Bodygroups_W"] = {
-        [9] = 1
+        [8] = 1
     },
 }
 

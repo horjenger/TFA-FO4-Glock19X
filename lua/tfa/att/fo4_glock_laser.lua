@@ -17,9 +17,14 @@ ATTACHMENT.WeaponTable = {
 			["active"] = true
 		}
 	},
-        ["Bodygroups_W"] = {
-        [8] = 2
-    },
+	["WElements"] = {
+		["laser"] = {
+			["active"] = true
+		},
+		["laser_beam"] = {
+			["active"] = true
+		}
+	},
 	["Primary"] = {
 		["Spread"] = function(wep,stat) return math.max( stat * 0.8, stat - 0.01 ) end,
 		["SpreadMultiplierMax"] = function(wep,stat) return stat * ( 1 / 0.8 ) * 1.1 end

@@ -14,7 +14,6 @@ ATTACHMENT.WeaponTable = {
         [6] =  2,
     },
         ["Bodygroups_W"] = {
-        [6] =  2,
 		[7] =  1,
     },
 	["VElements"] = {

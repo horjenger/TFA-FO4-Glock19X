@@ -54,21 +54,21 @@ SWEP.BurstFireCount = 3
 SWEP.FireModeName = nil --Change to a text value to override it
 --Ammo Related
 SWEP.Primary.ClipSize = 17 -- This is the size of a clip
-SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize * 4 -- This is the number of bullets the gun gives you, counting a clip as defined directly above.
+SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize * 10 -- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo = "pistol" -- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 SWEP.DisableChambering = true --Disable round-in-the-chamber
 --Recoil Related
-SWEP.Primary.KickUp = 0.35 -- This is the maximum upwards recoil (rise)
-SWEP.Primary.KickDown = 0.25 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal = 0.15 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.KickUp = 0.4 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickDown = 0.22 -- This is the maximum downwards recoil (skeet)
+SWEP.Primary.KickHorizontal = 0.12 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor = 0.3 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
-SWEP.Primary.Spread = .015 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.Spread = .016 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy = .005 -- Ironsight accuracy, should be the same for shotguns
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
-SWEP.Primary.SpreadMultiplierMax = 2.5 --How far the spread can expand when you shoot. Example val: 2.5
+SWEP.Primary.SpreadMultiplierMax = 4--How far the spread can expand when you shoot. Example val: 2.5
 SWEP.Primary.SpreadIncrement = 1 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
 SWEP.Primary.SpreadRecovery = 4 --How much the spread recovers, per second. Example val: 3
 --Range Related
@@ -333,11 +333,14 @@ SWEP.SightOffset_RDS = SWEP.SightOffset_Nil + Vector(0, 1, -0.57)
 
 SWEP.SightOffset_Nil = Vector(0, 0, 0)
 SWEP.SightOffset_DELTA = SWEP.SightOffset_Nil + Vector(0, 1, -1)
+
+SWEP.IronSightsAng_XL = Vector(-0.13, 0.55, 0)
+SWEP.IronSightsPos_XL = Vector(0.105, 1, -1.72)
 	
 SWEP.Attachments = {	
 	[1] = { atts = { "fo4_glock_skin_black", "fo4_glock_skin_grey", "fo4_glock_skin_two_tone", "fo4_glock_skin_olive" } },
 	[2] = { atts = { "am_match", "am_magnum", "am_gib", "tfa_mb_penrnd"} },
-	[3] = { atts = { "fo4_glock_rds", "fo4_glock_delta", "fo4_glock_trit_sight" } },
+	[3] = { atts = { "fo4_glock_rds", "fo4_glock_delta", "fo4_glock_romero", "fo4_glock_trit_sight" } },
 	[4] = { atts = { "fo4_glock_mag_22", "fo4_glock_mag_33", "fo4_glock_mag_50" } },
 	[5] = { atts = { "fo4_glock_muzzle", "fo4_glock_supp_osprey", "fo4_glock_supp_gemtech" } },
 	[6] = { atts = { "fo4_glock_laser", "fo4_glock_flashlight", "fo4_glock_flashlight_tlr7"} },
@@ -345,7 +348,17 @@ SWEP.Attachments = {
 	[8] = { atts = { "fo4_glock_agency_slide" } },
 }
 
-SWEP.ViewModelBoneMods = {}
+SWEP.ViewModelBoneMods = {
+		["WeaponOptics2"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+		["Flashlight:0"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+		["LaserSight:0"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+}
+
+SWEP.WorldModelBoneMods = {
+		["WeaponOptics2"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+		["Flashlight:0"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+		["LaserSight:0"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+}
 
 SWEP.VElements = {
 	["sight_rds"] = {
@@ -368,9 +381,9 @@ SWEP.VElements = {
 		type = "Quad",
 		rel = "sight_rds",
 		bone = "A_RenderReticle",
-		pos = Vector(0, -5, 0),
+		pos = Vector(0, -10, 0),
 		angle = Angle(0, 0, 90),
-		size = 0.4,
+		size = 0.45,
 		draw_func_outer = FO4DrawSingleReticle(),
 		active = false
 	},
@@ -394,19 +407,50 @@ SWEP.VElements = {
 		type = "Quad",
 		rel = "sight_delta",
 		bone = "A_RenderReticle",
-		pos = Vector(0, -5, 0),
+		pos = Vector(0, -10, 0),
 		angle = Angle(0, 0, 90),
-		size = 0.5,
+		size = 0.6,
 		draw_func_outer = FO4DrawSingleReticle(),
 		active = false
 	},
-	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["sight_romero"] = {
+		type = "Model",
+		model = "models/weapons/c_glock_sight_romero.mdl",
+		bone = "Weapon",
+		rel = "",
+		pos = Vector(0, 0, 0),
+		angle = Angle(0, 0, 0),
+		size = Vector(1, 1, 1),
+		color = Color(255, 255, 255, 255),
+		surpresslightning = false,
+		material = "",
+		skin = 0,
+		bodygroup = {},
+		active = false,
+		bonemerge = true
+	},
+	["sight_romero_lens"] = {
+		type = "Quad",
+		rel = "sight_romero",
+		bone = "A_RenderReticle",
+		pos = Vector(0, -10, 0),
+		angle = Angle(0, 0, 90),
+		size = 0.45,
+		draw_func_outer = FO4DrawSingleReticle(),
+		active = false
+	},
+	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+//	["hands"] = { type = "Model", model = "models/hands/c_fo4_hands_park.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = true },
 }
 
 SWEP.WElements = {
+	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 }
 SWEP.MuzzleAttachmentSilenced = 2
 SWEP.LaserSightModAttachment = 1
@@ -424,6 +468,22 @@ SWEP.EventTable = {
 		{time = 1.1666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothCheckEnd")}
 	},
 	["equip_alt"] = {
+		{time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.Holster")},
+		{time = 0.3333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothDrawSlideBack")},
+		{time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBack")},
+		{time = 0.9000000357627869, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideForward")},
+		{time = 1.0666667222976685, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
+		{time = 1.3000000715255737, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
+	},
+	["equip_mount"] = {
+		{time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.Holster")},
+		{time = 0.3333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothDrawSlideBack")},
+		{time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBack")},
+		{time = 0.9000000357627869, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideForward")},
+		{time = 1.0666667222976685, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
+		{time = 1.3000000715255737, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothEnd")}
+	},
+	["equip_first"] = {
 		{time = 0.0, type = "sound", value = Sound("TFA_FO4_GLOCK19X.Holster")},
 		{time = 0.3333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothDrawSlideBack")},
 		{time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideBack")},

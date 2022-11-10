@@ -15,9 +15,11 @@ ATTACHMENT.WeaponTable = {
 			active = true
 		}
 	},
-        ["Bodygroups_W"] = {
-        [8] =  1,
-    },
+	WElements = {
+		flashlight = {
+			active = true
+		}
+	},
 	FlashlightAttachmentName = "Laser",
 	Flashlight_VElement = "flashlight",
 	FlashlightAttachmentWorld = 1,

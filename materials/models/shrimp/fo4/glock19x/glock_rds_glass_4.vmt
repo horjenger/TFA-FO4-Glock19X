@@ -6,7 +6,7 @@
 
 	"$envmap"					"env_cubemap"
 	"$envmapfresnel"			"1"
-	"$envmaptint"				"[0.6 1 1]"
+	"$envmaptint"				"[1.0 0.4 0.18]"
 
 	"$phong"					"1"
 	"$phongexponent"			"50"

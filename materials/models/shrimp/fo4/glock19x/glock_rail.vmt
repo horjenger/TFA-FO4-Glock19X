@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/shrimp/fo4/glock19x/Mount_ALG_D"
+	"$bumpmap" "models/shrimp/fo4/glock19x/Mount_ALG_N"
+	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Mount_ALG_S"
+	"$phong" "1"
+	"$phongboost" "130"
+	"$phongexponent" "20"		
+	"$normalmapalphaenvmapmask" 	"1"
+	"$phongfresnelranges"	"[0.54 0.62 1]"
+	"$phongalbedotint" 			"1"
+	"$rimmask" 1
+	"$rimlight"               1
+	"$rimlightexponent"       10
+	"$rimlightboost"          10	
+	"$envmap"	"env_cubemap"
+	"$envmaptint"			"[0.015 0.015 0.015]"
+}
+
