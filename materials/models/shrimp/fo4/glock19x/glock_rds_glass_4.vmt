@@ -6,11 +6,11 @@
 
 	"$envmap"					"env_cubemap"
 	"$envmapfresnel"			"1"
-	"$envmaptint"				"[1.0 0.4 0.18]"
+	"$envmaptint"				"[0.48 0.42 1.0]"
 
 	"$phong"					"1"
 	"$phongexponent"			"50"
 	"$phongboost"				"10"
 	"$phongfresnelranges"		"[0.25 0.75 1.00]"
-	"$phongtint"				"[0.15 0.5 1.0]"
+	"$phongtint"				"[0.60 0.56 1.0]"
 }

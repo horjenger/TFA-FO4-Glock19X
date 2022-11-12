@@ -1,6 +1,6 @@
 "Modulate"
 {
 	"$basetexture"				"dev\bump"
-	"$color2"					"[1.0 0.4 0.1]"
+	"$color2"					"[0.48 0.42 1.0]"
 	"$mod2x"					"1"
 }

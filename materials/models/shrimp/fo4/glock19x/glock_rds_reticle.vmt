@@ -3,30 +3,26 @@
 {
 	"$basetexture"	"models/shrimp/fo4/glock19x/ReticleDot"
 	"$detail"		"models/weapons/tfa_ins2/optics/laser_noise"
-	"$detailblendmode" "2"
-	"$detailframe"	"0"
-	"$translucent" 	"1"
-	"$model"		"1"
-	"$additive"	"1"
+	"$detailscale"					"0.5"
+	"$detailblendfactor"			"1"
+	"$detailblendmode"				"5"
+	"$detailframe"					"0"
+	"$translucent"					"1"
+	"$additive"						"1"
 
-	$color2 "[1 0 0]"
+	"$color2"						"[0 0 0]"
 
 	Proxies
 	{
 		TextureScroll
 		{
-			textureScrollVar	$detailtexturetransform
-			textureScrollRate	50
-			textureScrollAngle 	180
+			textureScrollVar		$detailtexturetransform
+			textureScrollRate		100
+			textureScrollAngle		45
 		}
 		TFAReticuleColor
 		{
-			resultVar $color2
+			resultVar				$color2
 		}
-	}
-
-	UnlitGeneric_DX8
-	{
-		$detail	"models/weapons/tfa_ins2/detail_empty"
 	}
 }
