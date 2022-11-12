@@ -2,7 +2,7 @@
 
 # TFA-FO4-Glock19X
 Glock19X from Fallout 4 mod on TFA Base
-  https://github.com/horjenger/TFA-FO4-Base
+
 ## Requestments:
 * TFA Base
 * [TFA FO4 Base](https://github.com/horjenger/TFA-FO4-Base)
