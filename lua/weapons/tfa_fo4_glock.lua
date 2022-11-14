@@ -199,7 +199,9 @@ SWEP.Walk_Mode = TFA.Enum.IDLE_ANI
 SWEP.Customize_Mode = TFA.Enum.LOCOMOTION_HYBRID
 SWEP.Idle_Mode = TFA.Enum.IDLE_ANI
 
-SWEP.StatusLengthOverride = {
+SWEP.SequenceLengthOverride = {
+	["reload"] = 2.5,
+	["reload_alt"] = 2.3,
 	["reload_24"] = 2.4566666984558105,
 	["reload_33"] = 2.4566666984558105,
 	["reload_50"] = 3.7
