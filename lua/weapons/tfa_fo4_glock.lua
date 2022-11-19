@@ -160,12 +160,12 @@ SWEP.SafetyAng = Vector(40, 5, 0)
 --[[IRONSIGHTS]]--
 SWEP.data = {}
 SWEP.data.ironsights = 1 --Enable Ironsights
-SWEP.Secondary.IronFOV = 82 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
-SWEP.IronSightsPos = Vector(0.13, 1.5, -0.02)
+SWEP.Secondary.IronFOV = 85 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
+SWEP.IronSightsPos = Vector(0.13, 2, -0.02)
 SWEP.IronSightsAng = Vector(0, 0.55, 0)
 --[[INSPECTION]]--
-SWEP.InspectPos = Vector(-1, 2, 1)
-SWEP.InspectAng = Vector(0, 0, 0)
+SWEP.InspectPos = Vector(14.406, -8, 2.358)
+SWEP.InspectAng = Vector(36.34, 56.686, 39.937)
 --[[VIEWMODEL ANIMATION HANDLING]]--
 SWEP.AllowViewAttachment = true --Allow the view to sway based on weapon attachment while reloading or drawing, IF THE CLIENT HAS IT ENABLED IN THEIR CONVARS.
 --[[VIEWMODEL BLOWBACK]]--
@@ -264,20 +264,10 @@ SWEP.ShootAnimation = {
 }
 
 SWEP.CustomizeAnimation = {
-	["in"] = {
-		["type"] = TFA.Enum.ANIMATION_SEQ,
-		["value"] = "ACT_VM_CUST_IN",
-		["transition"] = true
-	},
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ,
-		["value"] = "ACT_VM_CUST_LOOP",
+		["value"] = "ACT_VM_IDLE",
 		["is_idle"] = true
-	},
-	["out"] = {
-		["type"] = TFA.Enum.ANIMATION_SEQ,
-		["value"] = "ACT_VM_CUST_OUT",
-		["transition"] = true
 	}
 }
 
