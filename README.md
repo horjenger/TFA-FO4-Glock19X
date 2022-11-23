@@ -16,3 +16,7 @@ Glock19X from Fallout 4 mod on TFA Base
 ## IMPORTANT FOR UPDATES
 ![alt text](https://i.imgur.com/wBAscZ9.png) 
 
+## Copyright | hörjenger;) 2019-2022
+
+* Unauthorized publication of this content will result in a DMCA.
+
