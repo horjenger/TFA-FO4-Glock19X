@@ -4,7 +4,7 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/Glock_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Glock_S"
 	"$phong" "1"
-	"$phongboost" "190"
+	"$phongboost" "120"
 	"$phongexponent" "20"		
 	"$normalmapalphaenvmapmask" 	"1"
 	"$phongfresnelranges"	"[0.4 0.6 1]"
