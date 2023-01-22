@@ -1,4 +1,4 @@
-![alt text](https://i.imgur.com/6E6GmqD.png) 
+![alt text](https://i.imgur.com/uMLG4gu.gif) 
 
 # TFA-FO4-Glock19X
 Glock19X from Fallout 4 mod on TFA Base
@@ -14,7 +14,7 @@ Glock19X from Fallout 4 mod on TFA Base
 * ***There may be extra files I forgot to delete***
 
 ## IMPORTANT FOR UPDATES
-![alt text](https://i.imgur.com/uMLG4gu.gif) 
+![alt text](https://i.imgur.com/wBAscZ9.png) 
 
 ## Copyright | hörjenger;) 2019-2022
 
