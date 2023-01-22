@@ -7,7 +7,7 @@
 	"$phongboost" "5"	
 	"$phongexponent" "15"	
 	"$phongalbedotint"			"1"
-	"$normalmapalphaenvmapmask" 	"1"
+	
 	"$phongfresnelranges"	"[1 1 1]"
 	"$color2"	"[0.76 0.76 0.76]"
 	"$phongtint" "[0.40 0.24 0.06]"
