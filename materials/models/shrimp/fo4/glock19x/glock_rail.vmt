@@ -4,15 +4,14 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/Mount_ALG_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Mount_ALG_S"
 	"$phong" "1"
-	"$phongboost" "130"
-	"$phongexponent" "20"		
+	"$phongboost" "15"	
+	"$phongalbedotint" 1
 	"$normalmapalphaenvmapmask" 	"1"
-	"$phongfresnelranges"	"[0.54 0.62 1]"
-	"$phongalbedotint" 			"1"
+	"$phongfresnelranges"	"[0.5 0.6 1]"
 	"$rimmask" 1
 	"$rimlight"               1
-	"$rimlightexponent"       10
-	"$rimlightboost"          10	
+	"$rimlightexponent"       30
+	"$rimlightboost"          0.1	
 	"$envmap"	"env_cubemap"
 	"$envmaptint"			"[0.015 0.015 0.015]"
 }

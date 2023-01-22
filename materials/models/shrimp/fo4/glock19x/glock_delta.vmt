@@ -4,14 +4,15 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/Sight_LeupoldDeltapointPro_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Sight_LeupoldDeltapointPro_S"
 	"$phong" "1"
-	"$phongboost" "1"
-	"$phongexponent" "15"		
+	"$phongboost" "15"	
+	"$phongalbedotint" 1
 	"$normalmapalphaenvmapmask" 	"1"
-	"$phongfresnelranges"	"[0.7 0.8 1]"
+	"$phongfresnelranges"	"[0.5 0.6 1]"
 	"$rimmask" 1
 	"$rimlight"               1
-	"$rimlightexponent"       10
-	"$rimlightboost"          0.2	
+	"$rimlightexponent"       30
+	"$rimlightboost"          0.1	
 	"$envmap"	"env_cubemap"
 	"$envmaptint"			"[0.015 0.015 0.015]"
 }
+
