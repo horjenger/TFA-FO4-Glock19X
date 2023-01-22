@@ -9,12 +9,12 @@ Glock19X from Fallout 4 mod on TFA Base
 * TFA Insurgency: Shared Parts
 
 ## Notes:
-* ***Uncompressed textures***
+* ***Uncompressed bumpmaps***
 * ***Addon can kill your FPS*** (on potato PC)
 * ***There may be extra files I forgot to delete***
 
 ## IMPORTANT FOR UPDATES
-![alt text](https://i.imgur.com/wBAscZ9.png) 
+![alt text](https://i.imgur.com/uMLG4gu.gif) 
 
 ## Copyright | hörjenger;) 2019-2022
 
