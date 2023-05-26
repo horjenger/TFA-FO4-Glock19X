@@ -161,8 +161,8 @@ SWEP.SafetyAng = Vector(40, 5, 0)
 SWEP.data = {}
 SWEP.data.ironsights = 1 --Enable Ironsights
 SWEP.Secondary.IronFOV = 85 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
-SWEP.IronSightsPos = Vector(0.13, 2, -0.02)
-SWEP.IronSightsAng = Vector(0, 0.55, 0)
+SWEP.IronSightsPos = Vector(0.15, 2, -0.019)
+SWEP.IronSightsAng = Vector(0, 0.72, 0)
 --[[INSPECTION]]--
 SWEP.InspectPos = Vector(14.406, -8, 2.358)
 SWEP.InspectAng = Vector(36.34, 56.686, 39.937)
@@ -327,8 +327,8 @@ SWEP.SightOffset_RDS = SWEP.SightOffset_Nil + Vector(0, 0, -0.57)
 SWEP.SightOffset_Nil = Vector(0, 0, 0)
 SWEP.SightOffset_DELTA = SWEP.SightOffset_Nil + Vector(0, 0, -1)
 
-SWEP.IronSightsAng_XL = Vector(-0.13, 0.55, 0)
-SWEP.IronSightsPos_XL = Vector(0.105, 0, -1.72)
+SWEP.IronSightsAng_XL = Vector(-0.13, 0.62, 0)
+SWEP.IronSightsPos_XL = Vector(0.105, 0, -1.65)
 	
 SWEP.Attachments = {	
 	[1] = { atts = { "fo4_glock_skin_black", "fo4_glock_skin_grey", "fo4_glock_skin_two_tone", "fo4_glock_skin_olive" } },
