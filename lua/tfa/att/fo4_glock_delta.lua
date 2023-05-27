@@ -24,8 +24,9 @@ ATTACHMENT.WeaponTable = {
 			["active"] = true
 		}
 	},
-	["IronSightsPos"] = function( wep, val ) return wep.IronSightsPos_REFLEX or val end,
-	["IronSightsAng"] = function( wep, val ) return wep.IronSightsAng_REFLEX or val end,
+	["IronSightsPos"] = function(wep, val)
+		return val + wep.SightOffset_DELTA or val
+	end,
 	["ScopeVElement"] = "sight_delta",
 	["Reticle"] = "models/shrimp/fo4/glock19x/glock_delta_reticle"
 }

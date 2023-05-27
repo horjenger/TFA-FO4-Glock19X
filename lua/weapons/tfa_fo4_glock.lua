@@ -325,7 +325,7 @@ SWEP.SightOffset_Nil = Vector(0, 0, 0)
 SWEP.SightOffset_RDS = SWEP.SightOffset_Nil + Vector(0, 0, -0.57)
 
 SWEP.SightOffset_Nil = Vector(0, 0, 0)
-SWEP.SightOffset_DELTA = SWEP.SightOffset_Nil + Vector(0, 0, -1)
+SWEP.SightOffset_DELTA = SWEP.SightOffset_Nil + Vector(0.02, 0, -1)
 
 SWEP.IronSightsAng_XL = Vector(-0.13, 0.62, 0)
 SWEP.IronSightsPos_XL = Vector(0.105, 0, -1.65)
