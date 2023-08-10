@@ -49,6 +49,9 @@ ATTACHMENT.WeaponTable = {
 	["Reticle"] = "models/shrimp/fo4/glock19x/glock_rds_reticle"
 }
 
+ATTACHMENT.AttachSound = "TFA_FO4.MENU_MOD_SELECT"
+ATTACHMENT.DetachSound = "TFA_FO4.MENU_MOD_DESELECT"
+
 if not TFA_ATTACHMENT_ISUPDATING then
 	TFAUpdateAttachments()
 end

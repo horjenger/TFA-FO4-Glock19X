@@ -38,6 +38,9 @@ function ATTACHMENT:Detach(wep)
 	wep:SetSilenced(wep.Silenced)
 end
 
+ATTACHMENT.AttachSound = "TFA_FO4.MENU_MOD_SELECT"
+ATTACHMENT.DetachSound = "TFA_FO4.MENU_MOD_DESELECT"
+
 if not TFA_ATTACHMENT_ISUPDATING then
 	TFAUpdateAttachments()
 end

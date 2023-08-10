@@ -33,6 +33,9 @@ ATTACHMENT.WeaponTable = {
 	["LaserSightAttachmentWorld"] = function(wep,stat) return wep.LaserSightModAttachmentWorld or wep.LaserSightModAttachment end
 }
 
+ATTACHMENT.AttachSound = "TFA_FO4.MENU_MOD_SELECT"
+ATTACHMENT.DetachSound = "TFA_FO4.MENU_MOD_DESELECT"
+
 if not TFA_ATTACHMENT_ISUPDATING then
 	TFAUpdateAttachments()
 end
