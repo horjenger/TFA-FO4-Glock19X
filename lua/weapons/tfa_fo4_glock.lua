@@ -1,9 +1,9 @@
 SWEP.Base					= "tfa_fo4_base"
 SWEP.Category				= "TFA FO4" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep..
 SWEP.Manufacturer = "Glock GmbH" --Gun Manufactrer (e.g. Hoeckler and Koch )
-SWEP.Author					= "shrimp, GroveZ, AidenTheZapperGuy, FX0x01" --Author Tooltip
+SWEP.Author					= "shrimp/hörjenger;), GroveZ, FX0x01" --Author Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip
-SWEP.Description				= "It's so fucking based glock" 
+SWEP.Description				= "The 19x is the semi-auto pistol GLOCK® designed for the U.S. military's Modular Handgun System (MHS), and is now available for civilian purchase. The 19x has many of the features of the new Gen 5 series pistols on a full-size, model 17 frame, with a compact model 19 slide and barrel assembly." 
 SWEP.Spawnable				= (TFA and TFA.INS2) and true or false -- INSTALL SHARED PARTS
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
@@ -25,7 +25,7 @@ SWEP.Primary.Sound = Sound("TFA_FO4_GLOCK19X.Fp") -- This is the sound of the we
 SWEP.Primary.SilencedSound = Sound("TFA_FO4_GLOCK19X.Suppressed_Fp") -- This is the sound of the weapon, when silenced.
 SWEP.Primary.LoopSoundAutoOnly = true
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
-SWEP.Primary.Damage = 15 -- Damage, in standard damage points.
+SWEP.Primary.Damage = 10 -- Damage, in standard damage points.
 SWEP.Primary.DamageTypeHandled = true --true will handle damagetype in base
 SWEP.Primary.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.  Leave nil to autodetect.  DMG_AIRBOAT opens doors.
 SWEP.Primary.Force = nil --Force value, leave nil to autocalc
@@ -60,9 +60,9 @@ SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 SWEP.DisableChambering = true --Disable round-in-the-chamber
 --Recoil Related
-SWEP.Primary.KickUp = 0.25 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickUp = 0.3 -- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown = 0.2 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal = 0.18 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.KickHorizontal = 0.14 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor = 0.1 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
 SWEP.Primary.Spread = .016 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
@@ -87,14 +87,14 @@ SWEP.ProjectileEntity = nil --Entity to shoot
 SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 --[[VIEWMODEL]]--
-SWEP.ViewModel			= "models/weapons/c_fo4_glock19x.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/fo4/c_fo4_glock19x.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 65		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.SprintFOVOffset = 0 --Who the fuck knows what this shit do
 SWEP.UseHands = true --Use gmod c_arms system.
 SWEP.VMPos = Vector( 0, 1, 0)
 SWEP.VMAng = Vector( 0, 0, 0)
-SWEP.CrouchPos = Vector( 0, 1.6, 0.5)
+SWEP.CrouchPos = Vector( 0, 1, 0.5)
 SWEP.VMPos_Additive = false --Set to false for an easier time using VMPos. If true, VMPos will act as a constant delta ON TOP OF ironsights, run, whateverelse
 SWEP.CenteredPos = nil --The viewmodel positional offset, used for centering.  Leave nil to autodetect using ironsights.
 SWEP.CenteredAng = nil --The viewmodel angular offset, used for centering.  Leave nil to autodetect using ironsights.
@@ -106,7 +106,7 @@ SWEP.Bodygroups_V = {
 }
 
 --[[WORLDMODEL]]--
-SWEP.WorldModel			= "models/weapons/w_fo4_glock19x.mdl" -- Weapon world model path
+SWEP.WorldModel			= "models/weapons/fo4/w_fo4_glock19x.mdl" -- Weapon world model path
 SWEP.Bodygroups_W = {
 	[1] = 1,
 	[2] = 1,
@@ -137,7 +137,7 @@ SWEP.Scoped = false --Draw a scope overlay?
 SWEP.ScopeOverlayThreshold = 0.875 --Percentage you have to be sighted in to see the scope.
 SWEP.BoltTimerOffset = 0.25 --How long you stay sighted in after shooting, with a bolt action.
 SWEP.ScopeScale = 0.5 --Scale of the scope overlay
-SWEP.ReticleScale = 0.7 --Scale of the reticle overlay
+SWEP.ReticleScale = 1 --Scale of the reticle overlay
 --GDCW Overlay Options.  Only choose one.
 SWEP.Secondary.UseACOG = false --Overlay option
 SWEP.Secondary.UseMilDot = false --Overlay option
@@ -283,7 +283,7 @@ SWEP.SmokeParticle = nil --Smoke particle (ID within the PCF), defaults to somet
 --Shell eject override
 SWEP.LuaShellEject = true --Enable shell ejection through lua?
 SWEP.LuaShellEjectDelay = 0 --The delay to actually eject things
-SWEP.LuaShellModel = "models/weapons/glock19x_shell.mdl" -- The model to use for ejected shells
+SWEP.LuaShellModel = "models/weapons/fo4/glock19x_shell.mdl" -- The model to use for ejected shells
 SWEP.LuaShellEffect = "PistolShellEject" --The effect used for shell ejection; Defaults to that used for blowback
 --Tracer Stuff
 SWEP.TracerName 		= nil 	--Change to a string of your tracer name.  Can be custom. There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
@@ -356,7 +356,7 @@ SWEP.WorldModelBoneMods = {
 SWEP.VElements = {
 	["sight_rds"] = {
 		type = "Model",
-		model = "models/weapons/c_glock_sight_rds.mdl",
+		model = "models/weapons/fo4/upgrades/c_glock_sight_rds.mdl",
 		bone = "WeaponBolt",
 		rel = "",
 		pos = Vector(0, 0, 0),
@@ -382,7 +382,7 @@ SWEP.VElements = {
 	},
 	["sight_delta"] = {
 		type = "Model",
-		model = "models/weapons/c_glock_sight_delta.mdl",
+		model = "models/weapons/fo4/upgrades/c_glock_sight_delta.mdl",
 		bone = "WeaponBolt",
 		rel = "",
 		pos = Vector(0, 0, 0),
@@ -408,7 +408,7 @@ SWEP.VElements = {
 	},
 	["sight_romero"] = {
 		type = "Model",
-		model = "models/weapons/c_glock_sight_romero.mdl",
+		model = "models/weapons/fo4/upgrades/c_glock_sight_romero.mdl",
 		bone = "Weapon",
 		rel = "",
 		pos = Vector(0, 0, 0),
@@ -432,17 +432,16 @@ SWEP.VElements = {
 		draw_func_outer = FO4DrawSingleReticle(),
 		active = false
 	},
-	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/fo4/upgrades/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight"] = { type = "Model", model = "models/weapons/fo4/upgrades/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser"] = { type = "Model", model = "models/weapons/fo4/upgrades/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "BeamL:0", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(0.9, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
-//	["hands"] = { type = "Model", model = "models/hands/c_fo4_hands_park.mdl", bone = "Weapon", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = true },
 }
 
 SWEP.WElements = {
-	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["flashlight"] = { type = "Model", model = "models/weapons/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
-	["laser"] = { type = "Model", model = "models/weapons/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight_tlr7"] = { type = "Model", model = "models/weapons/fo4/upgrades/c_glock_flashlight_tlr7.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["flashlight"] = { type = "Model", model = "models/weapons/fo4/upgrades/c_glock_flashlight.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser"] = { type = "Model", model = "models/weapons/fo4/upgrades/c_glock_laser.mdl", bone = "WeaponOptics2", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 }
 SWEP.MuzzleAttachmentSilenced = 2
 SWEP.LaserSightModAttachment = 1
