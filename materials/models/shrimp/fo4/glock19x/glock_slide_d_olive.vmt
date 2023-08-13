@@ -1,18 +1,27 @@
-"VertexLitGeneric"
+"VertexLitGeneric"	
 {
-	"$basetexture" "models/shrimp/fo4/glock19x/Slide_Standard_OLIVE_D"
-	"$bumpmap" "models/shrimp/fo4/glock19x/Slide_Standard_N"
-	"$phongexponenttexture" "models/shrimp/fo4/glock19x/Slide_Standard_S"
-	"$phong" "1"
-	"$phongboost" "10"	
-	"$phongalbedotint" 1
-	
-	"$phongfresnelranges"	"[0.5 0.6 1]"
-	"$rimmask" 1
-	"$rimlight"               1
-	"$rimlightexponent"       30
-	"$rimlightboost"          0.1	
+	"$basetexture" "models/shrimp/fo4/glock19x/slide/Slide_Standard_OLIVE_D"
+	"$bumpmap" "models/shrimp/fo4/glock19x/slide/Slide_Standard_N"
+	"$phongexponenttexture" "models/shrimp/fo4/glock19x/slide/Slide_Standard_S"
+	"$phong"		"1"
+	"$blendtintbybasealpha" "1"
+	"$phongboost"	"15"
+	"$phongalbedotint"		"1"
+	"$phongfresnelranges"	"[0.6 0.7 1]"
+	"$rimlight"	"1"
+	"$rimlightexponent"		"35"
+	"$rimmask"	"1"
+	"$rimlightboost"	"0.5"
 	"$envmap"	"env_cubemap"
-	"$envmaptint" "[0.1 0.1 0.1]"	
+	"$envmaptint"	"[ 0.1 0.1 0.1]"
 }
+
+
+
+
+
+
+
+
+
 
