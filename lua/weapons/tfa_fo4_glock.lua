@@ -127,7 +127,7 @@ SWEP.Offset = {
 		Right = 180,
 		Forward = 0
 	},
-	Scale = 1
+	Scale = 0.9
 } --Procedural world model animation, defaulted for CS:S purposes.
 SWEP.ThirdPersonReloadDisable = false --Disable third person reload?  True disables.
 --[[SCOPES]]--
