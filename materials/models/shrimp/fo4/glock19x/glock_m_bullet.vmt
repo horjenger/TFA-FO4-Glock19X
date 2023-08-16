@@ -4,10 +4,9 @@
 	"$bumpmap" "models/shrimp/fo4/glock19x/mag/Magazine_N"
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/mag/Magazine_S"
 	"$phong" "1"
-	"$phongboost" "5"	
-	"$phongexponent" "15"	
+	"$phongboost" "3"	
+	"$phongexponent" "10"	
 	"$phongalbedotint"			"1"
-	
 	"$phongfresnelranges"	"[1 1 1]"
 	"$color2"	"[0.76 0.76 0.76]"
 	"$phongtint" "[0.40 0.24 0.06]"
