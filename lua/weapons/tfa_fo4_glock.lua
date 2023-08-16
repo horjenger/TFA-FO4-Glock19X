@@ -332,7 +332,7 @@ SWEP.IronSightsPos_XL = Vector(0.105, 0, -1.65)
 	
 SWEP.Attachments = {	
 	[1] = { atts = { "fo4_glock_skin_black", "fo4_glock_skin_grey", "fo4_glock_skin_two_tone", "fo4_glock_skin_olive" } },
-	[2] = { atts = { "am_match", "am_magnum", "am_gib", "tfa_mb_penrnd"} },
+//	[2] = { atts = { "am_match", "am_magnum", "am_gib", "tfa_mb_penrnd"} },
 	[3] = { atts = { "fo4_glock_rds", "fo4_glock_delta", "fo4_glock_romero", "fo4_glock_trit_sight" } },
 	[4] = { atts = { "fo4_glock_mag_22", "fo4_glock_mag_33", "fo4_glock_mag_50" } },
 	[5] = { atts = { "fo4_glock_muzzle", "fo4_glock_supp_osprey", "fo4_glock_supp_gemtech" } },
