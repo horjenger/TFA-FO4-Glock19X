@@ -13,7 +13,7 @@
 	"$rimmask"	"1"
 	"$rimlightboost"	"0.5"
 	"$envmap"	"env_cubemap"
-	"$envmaptint"	"[ 0.1 0.1 0.1]"
+	"$envmaptint"	"[ 0.07 0.07 0.07]"
 }
 
 
