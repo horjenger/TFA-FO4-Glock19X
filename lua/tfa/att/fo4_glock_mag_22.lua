@@ -10,6 +10,7 @@ ATTACHMENT.Icon = "entities/fo4_glock_mag_22.png" --Revers to label, please give
 ATTACHMENT.ShortName = "MAG+"
 
 ATTACHMENT.WeaponTable = {
+	
         ["Bodygroups_V"] = {
 		[2] =  2
     },
@@ -32,8 +33,11 @@ ATTACHMENT.WeaponTable = {
 		["ClipSize"] = function(wep, val)
 			return wep.Primary.ClipSize_ExtPistol or 24
 		end,
+	
 	},
 }
+
+
 
 function ATTACHMENT:Attach(wep)
 	if not wep.IsFirstDeploy then
