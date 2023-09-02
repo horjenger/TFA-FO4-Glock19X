@@ -46,12 +46,13 @@ function ATTACHMENT:Attach(wep)
 	if not wep.IsFirstDeploy then
 		wep:Unload()
 	end
+	wep.MagModel = "models/weapons/fo4/misc/w_glock19x_mag_50.mdl"
 end
 
 function ATTACHMENT:Detach(wep)
 	wep:Unload()
+	wep.MagModel = "models/weapons/fo4/misc/w_glock19x_mag_default.mdl"
 end
-
 ATTACHMENT.AttachSound = "TFA_FO4.MENU_MOD_SELECT"
 ATTACHMENT.DetachSound = "TFA_FO4.MENU_MOD_DESELECT"
 
