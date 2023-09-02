@@ -453,9 +453,9 @@ SWEP.MagImpactSounds = {
 
 SWEP.MagModel = "models/weapons/fo4/misc/w_glock19x_mag_default.mdl"
 SWEP.MagSkin = 0
-SWEP.MagDropSrcForward = 7
+SWEP.MagDropSrcForward = 4
 SWEP.MagDropSrcRight = 0
-SWEP.MagDropSrcUp = -12
+SWEP.MagDropSrcUp = -8
 SWEP.MagDropAng = Angle(0, 0, 0)
 SWEP.MagYeetVelocityForward = 25
 SWEP.MagYeetVelocityRight = 0
@@ -546,7 +546,6 @@ SWEP.EventTable = {
 		{time = 0.40000001192092896, type = "lua", value = function(wep, vm) wep:TFAMagDrop() end},
         {time = 0.23333333432674408, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},
         {time = 1.1166666746139526, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIns1")},
-//      {time = 0.9166666865348816, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagDrop")},
         {time = 1.399999976158142, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIn")},
         {time = 0.6000000238418579, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
         {time = 1.8333333730697632, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
@@ -558,7 +557,6 @@ SWEP.EventTable = {
         {time = 0.30000001192092896, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
 		{time = 0.40000001192092896, type = "lua", value = function(wep, vm) wep:TFAMagDrop() end},
         {time = 0.6000000238418579, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},
-//      {time = 0.9166666865348816, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagDrop")},
         {time = 1.1166666746139526, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIns1")},
         {time = 1.399999976158142, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIn")},
         {time = 1.8333333730697632, type = "sound", value = Sound("TFA_FO4_GLOCK19X.SlideRel")},
@@ -569,7 +567,6 @@ SWEP.EventTable = {
         {time = 0.36666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagOut")},
         {time = 0.1666666716337204, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothMagOut")},    
 		{time = 0.2666666716337204, type = "lua", value = function(wep, vm) wep:TFAMagDrop() end},
-//	    {time = 0.8666666746139526, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagDrop")},  
 		{time = 1.100000023841858, type = "sound", value = Sound("TFA_FO4_GLOCK19X.ClothGunRotate")},  		
 	    {time = 1.6666667461395264, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIns1")},
      	{time = 1.933333396911621, type = "sound", value = Sound("TFA_FO4_GLOCK19X.MagIns2")}, 
