@@ -580,3 +580,5 @@ SWEP.EventTable = {
 
 
 DEFINE_BASECLASS( SWEP.Base )
+
+--https://media.tenor.com/RzcKNKHCz6QAAAAC/rivet.gif
