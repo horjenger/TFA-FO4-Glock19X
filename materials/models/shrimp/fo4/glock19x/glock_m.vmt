@@ -5,7 +5,7 @@
 	"$phongexponenttexture" "models/shrimp/fo4/glock19x/mag/Magazine_S"
 	"$phong"		"1"
 	"$blendtintbybasealpha" "1"
-	"$phongboost"	"15"
+	"$phongboost"	"10"
 	"$phongalbedotint"		"1"
 	"$phongfresnelranges"	"[0.45 0.6 1]"
 	"$rimlight"	"1"
