@@ -25,7 +25,7 @@ SWEP.Primary.Sound = Sound("TFA_FO4_GLOCK19X.Fp") -- This is the sound of the we
 SWEP.Primary.SilencedSound = Sound("TFA_FO4_GLOCK19X.Suppressed_Fp") -- This is the sound of the weapon, when silenced.
 SWEP.Primary.LoopSoundAutoOnly = true
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
-SWEP.Primary.Damage = 20 -- Damage, in standard damage points.
+SWEP.Primary.Damage = 25 -- Damage, in standard damage points.
 SWEP.Primary.DamageTypeHandled = true --true will handle damagetype in base
 SWEP.Primary.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.  Leave nil to autodetect.  DMG_AIRBOAT opens doors.
 SWEP.Primary.Force = nil --Force value, leave nil to autocalc
@@ -41,7 +41,7 @@ SWEP.IronInSound = Sound("SHRIMP_CUSTOM.ADSIn") --Sound to play when ironsightin
 SWEP.IronOutSound = Sound("SHRIMP_CUSTOM.ADSOut") --Sound to play when ironsighting out?  nil for default
 --Bash
 SWEP.BashBase = true
-SWEP.Secondary.BashDamage = 20
+SWEP.Secondary.BashDamage = 40
 --Silencing
 SWEP.CanBeSilenced = false --Can we silence?  Requires animations.
 SWEP.Silenced = false --Silenced by default?
@@ -62,13 +62,13 @@ SWEP.DisableChambering = true --Disable round-in-the-chamber
 --Recoil Related
 SWEP.Primary.KickUp = 0.3 -- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown = 0.2 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal = 0.14 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.KickHorizontal = 0.15 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor = 0.1 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
-SWEP.Primary.Spread = .016 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .0085 -- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread = .02 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .008 -- Ironsight accuracy, should be the same for shotguns
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
-SWEP.Primary.SpreadMultiplierMax = 4--How far the spread can expand when you shoot. Example val: 2.5
+SWEP.Primary.SpreadMultiplierMax = 3 --How far the spread can expand when you shoot. Example val: 2.5
 SWEP.Primary.SpreadIncrement = 1 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
 SWEP.Primary.SpreadRecovery = 4 --How much the spread recovers, per second. Example val: 3
 --Range Related
@@ -78,7 +78,7 @@ SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage 
 SWEP.MaxPenetrationCounter = 2 --The maximum number of ricochets.  To prevent stack overflows.
 --Misc
 SWEP.IronRecoilMultiplier = 0.6 --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
-SWEP.CrouchAccuracyMultiplier = 0.85 --Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
+SWEP.CrouchAccuracyMultiplier = 0.9 --Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
 --Movespeed
 SWEP.MoveSpeed = 1 --Multiply the player's movespeed by this.
 SWEP.IronSightsMoveSpeed = 0.98 --Multiply the player's movespeed by this when sighting.
@@ -88,11 +88,11 @@ SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 --[[VIEWMODEL]]--
 SWEP.ViewModel			= "models/weapons/fo4/c_fo4_glock19x.mdl" --Viewmodel path
-SWEP.ViewModelFOV			= 65		-- This controls how big the viewmodel looks.  Less is more.
+SWEP.ViewModelFOV			= 70		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.SprintFOVOffset = 0 --Who the fuck knows what this shit do
 SWEP.UseHands = true --Use gmod c_arms system.
-SWEP.VMPos = Vector( 0, 1, 0)
+SWEP.VMPos = Vector( 0, 0, 0)
 SWEP.VMAng = Vector( 0, 0, 0)
 SWEP.CrouchPos = Vector( 0, 1, 0.5)
 SWEP.VMPos_Additive = false --Set to false for an easier time using VMPos. If true, VMPos will act as a constant delta ON TOP OF ironsights, run, whateverelse
