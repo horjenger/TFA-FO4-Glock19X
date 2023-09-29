@@ -6,7 +6,7 @@ TFA.AddSound(pref..".FireLoop", CHAN_USER_BASE, 1, 140, {99, 101}, path.."g19-lo
 TFA.AddSound(pref..".FireLoop_Silenced", CHAN_USER_BASE, 1, 140, {99, 101}, path.."g19-loop_supp.wav", ")")
 TFA.AddSound(pref..".FireLoop_Silenced_Tail", CHAN_USER_BASE, 1, 140, {99, 101}, path.."G19-tail_supp.wav", ")")
 TFA.AddSound(pref..".FireLoop_Tail", CHAN_USER_BASE, 1, 140, {99, 101}, path.."G19-tail.wav")
-TFA.AddSound(pref..".Fp", CHAN_USER_BASE, 1, 140, {99, 101}, path.."G19-1.wav", "G19-2.wav", "G19-3.wav", "G19-4.wav", ")")
+TFA.AddSound(pref..".Fp", CHAN_USER_BASE, 1, 140, {99, 101}, {path.."G19-1.wav", path.."G19-2.wav", path.."G19-3.wav", path.."G19-4.wav"}, ")")
 TFA.AddSound(pref..".Suppressed_Fp", CHAN_USER_BASE, 1, 140, {99, 101}, path.."G19-1-Suppressed.wav", ")")
 
 TFA.AddWeaponSound(pref .. ".ClothCheckEnd", path .. "Cloth_Check_End.wav")
